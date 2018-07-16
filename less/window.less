@@ -1,3 +1,49 @@
+/* Custom Quick Dark Theme 
+ * Hacked together and quickly disowned by Mic-B
+ * https://mic-b.com  */ 
+
+.top,
+div[data-test-id*='tabsToolbar'] {
+  background: #323234 !important;
+}
+.navbarCaptionButtonContainer {
+  background-color:#0c0c0d !important;
+  margin-bottom: 0 !important;
+  padding-bottom: @navbarMenubarMargin;
+}
+div[data-tab-area='true'] {
+  background:#0c0c0d !important;
+  color:#9199a1 !important;
+  & > div {
+     background: #323234 !important;
+     border-top-color:#0c0c0d !important;
+     & div[data-test-id='tabTitle'] {
+      color:#CCC !important;
+      &:before,
+      &:after {
+        opacity:0 !important;
+      }
+     }
+  }
+  &[class*='isActive'] {
+    & > div {
+       background: #323234 !important;
+       & div[data-test-id='tabTitle'] {
+          color:#FFF !important;
+       }
+    }
+  }
+}
+.urlbarForm {
+  border:1px solid #5a5a5c !important;
+  background:#323234 !important;
+  color: #f9f9fa !important;
+  input,
+  .titleBar {
+     color: #f9f9fa !important;
+  }
+}
+
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
